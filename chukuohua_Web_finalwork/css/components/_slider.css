@@ -1,0 +1,25 @@
+.feature-button-next, .feature-button-prev {
+  color: #404040;
+  --swiper-navigation-size: 26px; }
+
+.feeling-swiper-container {
+  margin: .5em 5px; }
+
+.Chef-swiper-container {
+  margin: 1em 5px; }
+
+.feeling-swiper-container, .Chef-swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1; }
+
+.feeling-bottom {
+  padding-bottom: 20px; }
+
+.feeling-pagination {
+  bottom: 0 !important;
+  --swiper-theme-color: #654f47; }

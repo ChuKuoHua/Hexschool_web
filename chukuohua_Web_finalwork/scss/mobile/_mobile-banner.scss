@@ -1,0 +1,43 @@
+@include pad(){
+    .banner{
+        .title{        
+            h1{
+                line-height: 50px;
+            }
+        } 
+    }
+}
+@include iphone(){
+    .banner{
+        height: 400px;
+        background-image: url(../images/mobile_banner.png);
+        .title{        
+            margin-left: 10%;
+            margin-right: 10%;
+            h1{
+                line-height: 50px;
+                font-size: 2em;
+            }
+            p{
+                margin-top: 10px;
+                font-size: $font-ms;
+            }
+        } 
+    }
+}
+@include iphone5(){
+    .banner{
+        .title{     
+            margin-left: 5%;
+            margin-right: 5%; 
+            h1{
+                font-size:$font-xl;
+            }
+            p{
+                font-size: $font-ms;
+                letter-spacing: 0;
+                line-height: 1.6em;
+            }
+        } 
+    }
+}

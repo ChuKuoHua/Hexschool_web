@@ -1,0 +1,91 @@
+.footer{
+    padding-top: $pad-ms;
+    padding-bottom: $pad-m;
+    background: $footerbk;
+    display: grid;
+    .about,.contact{
+        width: 32%;
+        float: left;
+        h3{
+            font-size: $font-l;
+        }
+        p{
+            padding-top: $pad-m;
+            line-height: $textHeight;
+        }
+    }
+    .contact{
+        padding-left: 30px;
+        .conn{
+            padding-top: $pad-m;
+            width: 100%;
+            li{
+                padding-top: $pad-s;
+                list-style: circle;
+            }
+        }
+    }
+    ul{
+        float: right;
+        width: 28%;
+        h3{
+            font-size: $font-l;
+        }
+        li{
+            p{
+                padding-top: $pad-m;
+                line-height: $textHeight;
+            }
+        }
+        
+    }    
+    .navber{
+        .footer-logo{
+            float: right;
+            max-width: 240px;
+            display: block;
+        }
+        .nav{
+            .icon{
+                float: right;
+                padding-top: $pad-s;
+                width: 150px;
+                li{
+                    margin-left: 5px;
+                    padding-left: $pad-s;
+                    float: left;
+                    font-size: $font-xl;
+                    .fa-google-plus-square{
+                        color: #DB4437;
+                    }
+                    .fa-twitter-square{
+                        color: #41ABE1; 
+                    }
+                    .fa-facebook-square{
+                        color: #3A5795;
+                    }
+                }
+            }
+        }
+    }
+    .top{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: #dadada9e;
+        border: 1px solid #dadada6e;
+        display: none;
+        z-index: 999;
+        a{
+            padding: 13px 15px;
+            color: #14224b;
+            text-decoration: none;
+            &:hover{
+                color: #b93838;
+            }
+        }
+        &:hover{
+            box-shadow: 0 0 3px #8f8080;
+        }
+    }  
+}

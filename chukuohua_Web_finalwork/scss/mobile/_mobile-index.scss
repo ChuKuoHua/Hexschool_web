@@ -1,0 +1,265 @@
+@include pad(){
+    .feature{
+        h2{
+            font-size: $font-l;
+            left: 33%;
+            right: 33%;
+            line-height: 26px;
+        }
+        ul{
+            margin-top: 3.5em;
+            li{
+                max-width: 50%;
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .Chef{
+        background: #634033;
+        img{
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            height: 350px;
+        }
+        section{          
+            max-width: 100%;
+            float: none;
+            margin: 36px 24px 0 24px;
+            padding-bottom: $pad-m;
+            h2{
+                font-size: $font-l;
+                text-align: center;
+            }
+            .Chef-name{
+                text-align: center;
+            }
+            p{
+                font-size: 18px;
+                padding: 10px 0;
+                span{
+                    display: inline;
+                    line-height: 26px;
+                    letter-spacing: 1.3px;  
+                    margin-bottom: $mar-m;            
+                }
+            }
+        }
+    }
+    .feeling-box{
+        display: none;
+    }
+    .m-feeling-box{
+        display: inline;
+        h2{
+            margin-top:1em;
+            text-align: center;
+            line-height: 28px;
+            letter-spacing: 2px;
+            font-size: $font-l;
+        }
+        ul{
+            li{
+                position: relative;
+                margin: 10px 0px;
+                img{            
+                    border-radius: 50%;
+                    padding-left: 10px;
+                }
+                span{
+                    position: absolute;
+                    top: 28px;                    
+                    margin-left: 15px;     
+                    font-size: $font-ms;           
+                }
+                p{
+                    line-height: $textHeight;
+                    padding: 0 10px;
+                }
+                .visitors{
+                    padding-top: 10px;
+                    padding-right: 17px;
+                    float: right;
+                }
+            }
+        }
+
+    }
+    .reserve{
+        h2{
+            font-size: $font-l;
+            line-height: 1.2em;
+        }
+        img{
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        .reserve-data{
+            position: relative;
+            margin-top: 20px;
+            padding-bottom: $pad-ms;
+            width: 80%;
+            float: none;
+            display: block;
+            margin: 24px auto 0 auto;
+            font-size: 18px;
+            input{
+                height: 40px;
+            }
+            .data-but{
+                position: absolute;
+                float: none;
+                bottom: -20px;
+                right: 5px;
+            }
+        }
+    }
+    .send-but, .cancel-but{
+        width: 100px !important;
+        font-size: $font-m;
+    }
+}
+@include iphone(){
+    .feature{
+        display: none;
+    }
+    .m-feature{
+        display: inline;
+        h2{
+            margin: 1em 0;
+            text-align: center;
+            line-height: 28px;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+        ul{
+            margin-bottom: $mar-m;
+            text-align: center;
+            img{
+                margin-bottom: 1em;
+                border-radius: 50%;
+            }
+            h3{
+                font-size: $font-ms;
+                padding: 10px 0;
+            }
+            p{
+                font-size: 18px;
+                line-height: $textHeight;
+                letter-spacing: 1px;
+                padding: 5px 10px 5px 10px;
+                text-align: left;
+            }
+        }
+    }
+    .Chef{
+        .Chef-introduction{
+            display: none;
+        }
+        .m-Chef-introduction{
+            display: inline;
+            p{
+                padding: 10px 10px;
+                span{
+                    letter-spacing: 2px;   
+                }
+                .Chef-content{
+                    display: none;
+                }
+            }
+            button{
+                display: block;
+                margin: 0 auto;
+            }
+            .fa-sort-up{
+                display: none;
+            }
+            .fa-sort-up,.fa-sort-down{
+                font-size: 30px;
+                color: #f3f3f3;
+            }
+        }
+    }
+    .feeling-box{
+        display: none;
+    }
+    .reserve{
+        h2{
+            margin-bottom: $mar-m;
+        }
+        .reserve-data{
+            width: 100%;
+            input{
+                width: 100%;
+                height: 44px;
+            }
+            select{
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            .vegan{
+                margin-left: $mar-m;
+            }
+            .vegan-radio{
+                height: 22px;
+            }
+        }
+    }
+    .send-but, .cancel-but{
+        width: 120px !important;
+        padding: 10px 5px;
+    }
+}
+@include iphone5(){
+    .Chef{
+        img{
+            height: 320px;
+        }
+        section{
+            margin: 26px 10px 0 10px;
+            p{
+                span{
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .reserve{
+        padding-bottom: 0;
+        .reserve-data{
+            select{
+                margin-left: 0;
+                margin-right: 0;
+                width: 50%;
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+            .number{
+                display: block;
+            }
+            .vegan{
+                margin-left: 0;
+            }
+            .vegan-radio{
+                margin-left: 24px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .data-but{
+                position: initial;
+                bottom: 0px; 
+                margin-top: 0px; 
+                right: 0px; 
+            }
+        }
+    }
+    .send-but, .cancel-but {
+        width: 150px !important;
+    }
+}

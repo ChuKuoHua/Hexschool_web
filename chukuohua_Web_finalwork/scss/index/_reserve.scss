@@ -1,0 +1,50 @@
+.reserve{
+    background: #f6f4f3;
+    padding-top: $pad-ms;
+    padding-left: $pad-m;
+    padding-right: $pad-m;
+    padding-bottom: 3.5em;
+    h2{
+        letter-spacing: 2px;
+        line-height: $textHeight;
+        text-align: center;
+        margin-bottom: $mar-ms;
+        font-size: $font-l;
+    }
+    img{
+        max-width: 48%;
+    }
+    .reserve-data{        
+        width: 48%;
+        float: right;
+        label{
+            margin: 10px 0;
+            max-width: 100%;
+        }
+        select{
+            padding: 2px 20px;
+            margin: 20px 10px;
+            display: inline;
+        }
+        input{
+            font-weight: bold;
+            width: 98%;
+            height: 32px;
+        }
+        .personal-data{
+            display: grid;
+        }
+        .vegan-radio{
+            width: 10%;
+            height: 16px;
+        }
+        .vegan{
+            margin-left: 2em;
+        }        
+        .data-but{
+            display: flex;
+            float: right;
+            padding-top:$pad-m; 
+        }
+    }
+}

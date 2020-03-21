@@ -1,0 +1,27 @@
+.Chef{
+    background: #3D1101;
+    display: inline-block;
+    img{
+        max-width: 46%;
+        height: 450px;
+    }
+    section{
+        margin-top: $mar-l;
+        max-width: 52%;
+        color:white;
+        float: right;
+        h2{
+            font-size: $font-l;
+        }
+        p{
+            padding: 10px 10px 10px 0;
+            span{
+                line-height: $textHeight;
+                letter-spacing: 1px;              
+            }
+        }
+    }
+}
+.m-Chef-introduction{
+    display: none;
+}

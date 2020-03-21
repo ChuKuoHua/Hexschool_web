@@ -1,0 +1,76 @@
+/*button style*/
+.send-but,.cancel-but{
+    font-family:Microsoft JhengHei;
+    margin: 5px;
+    border-radius: 5px;
+    width: 70px !important;
+    padding: 5px;
+    cursor: pointer;
+}
+.send-but{
+    background: #3cc1a9;
+    color: #ffffff;
+    border: 3px solid #3cc1a9;
+    &:hover{
+        border: 3px solid #1ab188;
+        background: #1ab188;
+        color: white;
+        transition: .5s ease;
+    }
+}
+.cancel-but{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 3px solid rgba(0, 0, 0, 0);
+    &:hover{
+        background: rgba(0, 0, 0, 0.61);
+        color: white;
+        transition: .5s ease;
+    }
+}
+/*login & sigup button*/
+.login,
+.signup,
+.signup-complete{
+    padding: $pad-s $pad-l;
+    border-radius: 3px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    font-size: $font-m;
+    font-family:Microsoft JhengHei;
+}
+.login{
+    background: #F56C23;
+    &:hover{
+        background: #ff5500;
+    }
+}
+.signup{
+    background: rgba(0,0,0,0.35);
+    &:hover{
+        background: #808190;
+    }
+}
+.signup-complete{
+    background: rgba(218, 100, 32, 0.92);
+    &:hover{
+        background: #41a03f;
+    }
+}
+/*text-scaling button*/
+.text-button{
+    width: 100px;
+    border: 0;
+    background: #634033;
+    cursor: pointer;
+}
+/*Featured style*/
+.featured{
+    width: 18px;
+    padding: 10px 5px;
+    background: #cc6123;
+    color:#f3fcff;
+    font-size: $font-m;
+    line-height: 25px;
+}

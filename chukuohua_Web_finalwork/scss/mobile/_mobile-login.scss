@@ -1,0 +1,43 @@
+@include pad(){
+    .login-box{
+        .login-data{
+            input{
+                height: 44px;
+            }
+            .forget{
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .signup,.login{
+                margin-top: $mar-ms;
+            }
+        }
+    }
+}
+@include iphone(){
+    .login-box{
+        .login-data{
+            max-width: 380px;
+            input{
+                width: 95%;
+            }
+            .login,.signup{
+                width: 60%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-left: $mar-ms;
+                margin-top: $mar-m;                
+                text-align: center;
+            }
+        }
+    }
+}
+@include iphone5(){
+    .login-box{
+        .login-data{
+            .login,.signup{
+                margin-left: 1em;
+            }
+        }
+    }
+}

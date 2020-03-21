@@ -1,0 +1,60 @@
+.login-box{
+    margin-top: $mar-ms;
+    img{
+        display:block;
+        margin:auto;
+    }
+    p{
+        margin-top: 12px;
+        text-align: center;
+        font-size: $font-ms;
+    }
+    .login-data{
+        max-width: 300px;
+        margin: 30px auto;
+        box-shadow: 0 0 2px #000;
+        h3{
+            padding-top: $pad-s;
+            text-align: center;
+            font-weight: bold;
+            font-size: $font-l;
+        }
+        label,input{
+            display: block;
+            margin: 0 auto;
+        }
+        label{
+            margin-top:$mar-s; 
+            margin-bottom:5px; 
+            margin-left: 15px;
+        }
+        input{
+            width: 93%;
+            height: 30px; 
+        }
+        .pwd-icon,.email-icon{
+            position:relative;
+        }
+        i { 
+            position: absolute; 
+            left: 10px;
+            top: calc(50% - 0.5em);
+        }
+        .pwd-icon input,.email-icon input{
+            text-indent: 30px;
+            margin-right: 30px;
+        } 
+        .forget{
+            display: block;
+            margin-top: 5px;
+            margin-left: 15px;
+            color: #d05b23;
+        }
+        .signup,.login{
+            margin-top: $mar-m;
+            margin-left: 12px;
+            margin-bottom: $mar-m;
+            display: inline-block;
+        }
+    }
+}

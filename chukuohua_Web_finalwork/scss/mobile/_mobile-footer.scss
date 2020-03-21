@@ -1,0 +1,65 @@
+@include pad(){
+    .footer{
+        .about{
+            display: none;
+        }
+        .contact{
+            padding-left: 0px;
+            width: 50%;
+        }
+        ul{
+            width: 45%;
+            padding-left: 20px;   
+            font-size: 18px;       
+            h3{
+                font-size: $font-l;
+            }
+        }
+    }
+}
+@include iphone(){
+    .footer{
+        display: inline-block;
+        height: auto;
+        width: 100%; 
+        padding-bottom: 2em;
+        .contact{
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: $mar-m;
+        }
+        ul{
+            float: none;
+            width: 100%; 
+            padding-bottom: 15px;
+            padding-left: 0;
+            h3{
+                text-align: center;
+            }
+            .conn{
+                li{
+                    text-align: center;
+                    list-style: inherit;
+                }
+            }
+        }
+        .navber{
+            .footer-logo{
+                float: none;
+                margin: 0 auto;
+            }
+            .nav{
+                .icon{
+                    float: none;
+                    margin: 0 auto;
+                    li{
+                        margin-left: 15px;
+                        padding-left: 0;
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+@include pad(){
+    .page-content{
+        .page-menu{
+            max-width: 150px;
+            padding: 0 1em 2em 1em;
+            li{
+                width: 190px;
+                font-size: 18px;
+            }
+        }
+        .commodity-box{
+            .search-box{  
+                form{
+                    width: 65%;
+                }
+            }
+            .commodity-content{
+                .product{
+                    width: 45%;
+                    margin-top:$mar-m;
+                }
+                .bro-mar{
+                    margin-left: 10px;
+                }
+                .Dragon-mar{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    
+}
+@include iphone(){
+    .page-content{
+        .page-menu{
+            display: none;
+        }
+        .commodity-box{
+            margin-top: $mar-m;
+            margin-left: 0px;
+            .search-box{
+                float: none;
+                form{
+                    width: 80%;
+                    margin-left: 20px;
+                }
+                ul{
+                    .Checkout{
+                        display: none;
+                    }
+                    .shopping-icon{
+                        span{
+                            left: 30px;
+                        }
+                    }
+                    .fa-shopping-cart{
+                        margin-left: .6em;
+                    }
+                }
+            }
+            .clearfix{
+                clear: both;
+            }
+            .page-m-menu{
+                display: inherit;
+                margin: 10px 0;
+                padding: 10px 0;
+                height: 25px;
+                overflow-x: auto;
+                .page-m-list{
+                    float: right;
+                    li{
+                        float: left;
+                        padding: 10px 10px;
+                        th{
+                            width: 10%;
+                            a{
+                                padding: 10px;
+                                color: #3d1101;
+                                &:hover{
+                                    color: #e2480df7;
+                                }
+                            }                        
+                        }
+                    }
+                }
+            }
+            .commodity-content{
+                .product{
+                    width: 90%;
+                    margin-left: 5% !important;
+                    margin-right: 5% !important;
+                    padding-bottom: 10px;
+                    margin-top: 0 !important;                  
+                    img{
+                        height: 200px;
+                    }
+                    .fa-heart{
+                        font-size: 32px;
+                    }
+                    .featured{
+                        background: #a24521cc;
+                        color: #ffffffde;
+                        width: 30px;
+                        padding: 10px 5px;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                    .shopping{
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include iphone5(){
+    .page-content{
+        .commodity-box{
+            .search-box{
+                form{
+                    width: 75%;
+                }
+            }
+            .commodity-content{
+                ul{
+                    width: 90%;
+                    margin-left: 5% !important;
+                    margin-right: 5% !important;
+                    padding-bottom: 5px;
+                    li{                        
+                        img{
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

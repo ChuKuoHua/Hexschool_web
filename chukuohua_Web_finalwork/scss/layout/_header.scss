@@ -1,0 +1,41 @@
+.header{ 
+    background: rgba(0,0,0,0.75); 
+    padding-bottom: 20px;
+    .logo{
+        padding-top: 1em;
+        padding-left: 2em;
+        a{
+            background-image: url(../images/logo_w.png);
+            background-position: center;
+            background-repeat: repeat-x;
+            width: 120px;
+            height: 24px;
+            display: block;
+            @include hide-text;
+        }
+    }
+    .menu{
+        float: right;
+        margin-top: -1.2em;
+        li{
+            float: left;            
+            a{
+                padding: 21px 20px;
+                color: $linkColor;
+                font-weight: bold;
+                text-decoration: none;
+                &:hover{
+                    background: #ff9151;
+                    transition: all .5s;
+                }
+            }
+            .login{
+                margin-left: 20px;
+            }
+        }
+    }
+    .mobile-link,.mobile-close,.aside{
+        color: #fff;
+        display: none;
+    }
+}

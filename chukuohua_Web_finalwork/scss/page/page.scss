@@ -1,0 +1,188 @@
+.page-content{
+    .page-menu{
+        max-width: 200px;
+        float: left;
+        padding: 0 $pad-ms $pad-ms $pad-ms;
+        h2{
+            font-size: 20px;
+            margin-bottom: $mar-m;        
+            .fa-leaf{
+                margin-right: 5px;
+            }    
+        }
+        li{
+           border-bottom: 1px solid #000;
+           width: 180px;
+            a{
+                display: block;
+                padding-top: $pad-s;
+                padding-right: $pad-ms;
+                padding-bottom: $pad-s;
+                color: $textCol;
+                i{
+                    display: none;
+                }
+                &:hover{
+                    transform: translateX(10px);
+                    i{
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+    .commodity-box{
+        margin-top: $mar-ms;
+        margin-left: 240px;
+        .page-m-menu{
+            display: none;
+        } 
+        .clearfix{
+            clear: inherit;
+        }
+        .commodity-content{
+            .product{
+                width: 30%;
+                margin: $mar-ms 10px $mar-s 10px;
+                float: left;
+                box-shadow: 0 0 5px #c7c7c7;
+                position: relative;
+                &:hover{
+                    box-shadow: 0 0 8px #827a7a;
+                }
+                img{
+                    max-width: 100%;
+                    height: 120px;
+                }
+                .fa-heart{ 
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    color: #fff;
+                    font-size: $font-ms;  
+                    cursor: pointer;
+                    &.active{                            
+                        color: rgb(224, 45, 37);        
+                    }  
+                }
+                .featured{
+                    position: absolute;
+                    right: 20px;
+                    top: 0;
+                }
+                .shopping{
+                    width: 90%;
+                    padding: $pad-s;                    
+                    margin: .8em;
+                    background: $white;
+                    color: #FF5E45; 
+                    border: 1px solid #FF5E45;            
+                    border-radius: 5px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    i{
+                        margin-right: 10px;
+                    }
+                    &:hover{
+                        background: #FF5E45;
+                        color:$white;
+                    }
+                }
+                h3{
+                    margin-top: 12px;
+                    font-size: $font-ms;
+                    font-weight: bold;
+                    text-align: center;
+                }            
+                p{
+                    font-size: $font-s;
+                    margin: 5px 0;
+                    text-align: center;
+                } 
+                hr{
+                    background: $textCol;
+                    height: 1px;
+                    width: 40%;
+                }
+                .money{
+                    font-weight: bold;
+                    margin-top: $mar-s;
+                    font-size: $font-ms;
+                }
+                .commodity-icon{
+                    position: relative;
+                }
+            }
+            .Dragon-mar{
+                margin-top: 1em;
+                margin-left: 13px;
+                .featured{
+                    position: absolute;
+                    right: 20px;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+.search-box{
+    form{
+        margin-left: 10px;
+        float: left;
+        width: 72.6%;
+        .search-icon{
+            padding: 2px 5px 6px 0;
+            background: #3D1101;
+            border: 1px solid $textCol;
+            input{
+                width: 80%;
+                padding: 5px 0;
+            }
+            button{
+                padding: 5px;
+                background: #3d1101;
+                color: $white;
+                border: 0px;
+                cursor: pointer;
+            }
+        }
+    }
+    ul{
+        li{
+            float: left;  
+            a{
+                color: $textCol;
+            }
+        }
+        .Checkout{
+            border-right: 1px solid $textCol; 
+            margin-top: 10px;          
+            a{
+                position: relative;
+                font-size: $font-m;
+                font-weight: bold;                        
+                padding: 5px 15px;
+            }                       
+        }
+        .shopping-icon{
+            position: relative;
+            span{
+                position: absolute;
+                left: 35px;
+                width: 16px;
+                height: 14px;
+                font-size: 12px;
+                text-align: center;
+                border-radius: 50%;
+                color: $white;
+                background: #FF5E45;
+            }
+        } 
+        .fa-shopping-cart{
+            margin-left: $mar-m;    
+            margin-top: 5px;                  
+            font-size: $font-l;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.signup-box{
+    margin-top: $mar-ms;
+    img{
+        display:block;
+        margin:auto;
+    }
+    p{
+        margin-top: 12px;
+        text-align: center;
+        font-size: $font-ms;
+    }
+    .signup-data{
+        max-width: 680px;
+        margin: 30px auto;
+        box-shadow: 0 0 5px #000;
+        section{
+            width: 45%;
+            float: left;            
+            padding: 1em 1em;
+            p{
+                text-align: left;
+                font-size: $font-ms;
+                letter-spacing: 1.3px;
+                line-height: 20px;
+            }
+        }
+        h3{
+            padding-top: $pad-s;
+            text-align: center;
+            font-weight: bold;
+            font-size: $font-l;
+        }
+        label,input{
+            display: block;
+            margin: 0 auto;
+        }
+        label{
+            margin-top:$mar-s; 
+            margin-bottom:5px; 
+        }
+        input{
+            margin: 10px 0;
+            width: 90%;
+            height: 30px; 
+        }
+        .pwd-icon,.email-icon{
+            position:relative;
+        }
+        i { 
+            position: absolute; 
+            left: 10px;
+            top: calc(50% - 0.5em);
+        }
+        .pwd-icon input,.email-icon input{
+            text-indent: 30px;
+            margin-right: 30px;
+        } 
+        .exist{
+            display: block;
+            margin-top: 5px;
+            color: #d05b23;
+        }
+        .signup-complete{
+            display: block;
+            margin-top: $mar-ms;
+            margin-right: $mar-ms;
+            float: right;
+        }
+    }
+}

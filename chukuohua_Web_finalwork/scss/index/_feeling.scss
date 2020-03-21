@@ -1,0 +1,40 @@
+.feeling-box{
+    background: $contentbk;
+    display: inline-block;
+    h2{
+        padding-top: $pad-ms;
+        font-size: $font-l;
+        text-align: center;
+    }    
+    ul{
+        padding: 2em 0;
+        float: right;
+        li{
+            max-width: 30.5%;
+            float: left;
+            position: relative;
+            padding: 0 0 5px 20px;
+            img{            
+                border-radius: 50%;
+            }
+            span{
+                position: absolute;
+                top: 28px;
+                margin-left: 15px;                
+            }
+            .feeling{
+                line-height: $textHeight;
+                padding-left:82px;
+                text-align: justify;
+            }
+            .visitors{
+                padding-top: 15px;
+                float: right;
+            }
+        }
+    }    
+    
+}
+.m-feeling-box{
+    display: none;
+}

@@ -1,0 +1,53 @@
+.feature{
+    max-width: 100%;
+    background: $contentbk;
+    padding-top: 5px;
+    position: relative;
+    display: inline-block;
+    hr{     
+        margin-top: 3em;   
+        width: 50%;
+    }
+    h2{
+        background: $contentbk;
+        position: absolute;        
+        line-height: $textHeight;
+        padding: 0 5px;
+        top: 35px;
+        left: 35%;
+        right: 35%;
+        font-size: $font-l;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    ul{
+        margin-top: $mar-l;
+        margin-bottom: $mar-ms;
+        padding-left: $pad-ms;
+        text-align: center;
+        float: right;
+        li{
+            float: left;
+            max-width: 33.33333%;
+            img{
+                top:0;
+                margin-bottom: 1em;
+                border-radius: 50%;
+            }
+            h3{
+                font-size: $font-m;
+                padding: 10px 0;
+            }
+            p{
+                line-height: $textHeight;
+                letter-spacing: .5px;
+                padding: 5px 5px 5px 15px;
+                text-align: left;
+            }
+        }
+        
+    }
+}
+.m-feature{
+    display: none;
+}
